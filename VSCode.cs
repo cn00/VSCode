@@ -405,8 +405,8 @@ namespace dotBunny.Unity
             string[] possiblePaths =
 #if UNITY_EDITOR_OSX
             {
-                "/Applications/Visual Studio Code.app",
-                "/Applications/Visual Studio Code - Insiders.app"
+                "/Applications/VSCode.app",
+                "/Applications/VSCode-Insiders.app"
             };
 #elif UNITY_EDITOR_WIN
             {
@@ -1280,9 +1280,9 @@ namespace dotBunny.Unity
                 // Hidden Files
                 "\t\t\"**/.DS_Store\":true,\n" +
                 "\t\t\"**/.git\":true,\n" +
-                "\t\t\"**/.gitignore\":true,\n" +
-                "\t\t\"**/.gitattributes\":true,\n" +
-                "\t\t\"**/.gitmodules\":true,\n" +
+                "\t\t//\"**/.gitignore\":true,\n" +
+                "\t\t//\"**/.gitattributes\":true,\n" +
+                "\t\t//\"**/.gitmodules\":true,\n" +
                 "\t\t\"**/.svn\":true,\n" +
 
                 // Compressed Files
@@ -1316,9 +1316,9 @@ namespace dotBunny.Unity
                 // Textures
                 "\t\t\"**/*.gif\":true,\n" +
                 "\t\t\"**/*.ico\":true,\n" +
-                "\t\t\"**/*.jpg\":true,\n" +
-                "\t\t\"**/*.jpeg\":true,\n" +
-                "\t\t\"**/*.png\":true,\n" +
+                "\t\t//\"**/*.jpg\":true,\n" +
+                "\t\t//\"**/*.jpeg\":true,\n" +
+                "\t\t//\"**/*.png\":true,\n" +
                 "\t\t\"**/*.psd\":true,\n" +
                 "\t\t\"**/*.tga\":true,\n" +
                 "\t\t\"**/*.tif\":true,\n" +
@@ -1339,13 +1339,13 @@ namespace dotBunny.Unity
                 "\t\t\"**/*.OBJ\":true,\n" +
 
                 // Unity File Types
-                "\t\t\"**/*.asset\":true,\n" +
+                "\t\t//\"**/*.asset\":true,\n" +
                 "\t\t\"**/*.cubemap\":true,\n" +
                 "\t\t\"**/*.flare\":true,\n" +
                 "\t\t\"**/*.mat\":true,\n" +
                 "\t\t\"**/*.meta\":true,\n" +
-                "\t\t\"**/*.prefab\":true,\n" +
-                "\t\t\"**/*.unity\":true,\n" +
+                "\t\t//\"**/*.prefab\":true,\n" +
+                "\t\t//\"**/*.unity\":true,\n" +
                 "\t\t\"**/*.anim\":true,\n" +
                 "\t\t\"**/*.controller\":true,\n" +
 
@@ -1356,7 +1356,7 @@ namespace dotBunny.Unity
                 "\t\t\"library/\":true,\n" +
                 "\t\t\"obj/\":true,\n" +
                 "\t\t\"Obj/\":true,\n" +
-                "\t\t\"ProjectSettings/\":true,\r" +
+                "\t\t//\"ProjectSettings/\":true,\r" +
                 "\t\t\"temp/\":true,\n" +
                 "\t\t\"Temp/\":true\n" +
                 "\t}\n" +
